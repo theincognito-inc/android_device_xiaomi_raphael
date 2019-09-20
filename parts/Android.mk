@@ -16,7 +16,7 @@ LOCAL_PACKAGE_NAME := XiaomiParts
 LOCAL_CERTIFICATE := platform
 LOCAL_PRIVATE_PLATFORM_APIS := true
 LOCAL_PRIVILEGED_MODULE := true
-
+LOCAL_OVERRIDES_PACKAGES := CustomDoze
 LOCAL_USE_AAPT2 := true
 
 LOCAL_STATIC_ANDROID_LIBRARIES := \
@@ -28,7 +28,6 @@ LOCAL_STATIC_ANDROID_LIBRARIES := \
     android-support-v14-preference
 
 LOCAL_STATIC_JAVA_LIBRARIES := \
-    org.lineageos.platform.internal \
     vendor.xiaomi.hardware.displayfeature-V1.0-java \
     vendor.xiaomi.hardware.motor-V1.0-java
 
