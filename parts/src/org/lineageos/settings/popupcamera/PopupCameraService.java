@@ -33,7 +33,6 @@ import android.util.Log;
 
 import java.util.List;
 
-import com.android.internal.util.aosip.FileUtils;
 import vendor.xiaomi.hardware.motor.V1_0.IMotor;
 
 public class PopupCameraService extends Service {
@@ -89,8 +88,8 @@ public class PopupCameraService extends Service {
         filter.addAction("android.intent.action.ACTION_SHUTDOWN");
         filter.addAction("android.intent.action.SCREEN_ON");
         filter.addAction("android.intent.action.SCREEN_OFF");
-        filter.addAction("lineageos.intent.action.CAMERA_STATUS_CHANGED");
-        filter.addAction("lineageos.intent.action.ACTIVE_PACKAGE_CHANGED");
+        filter.addAction("android.intent.action.CAMERA_STATUS_CHANGED");
+        filter.addAction("android.intent.action.ACTIVE_PACKAGE_CHANGED");
         this.registerReceiver(mIntentReceiver, filter);
     }
 
