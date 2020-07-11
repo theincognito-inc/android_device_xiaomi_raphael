@@ -108,4 +108,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # USAP
 PRODUCT_PROPERTY_OVERRIDES += \
-        persist.device_config.runtime_native.usap_pool_enabled=true
+        persist.device_config.runtime_native.usap_pool_enabled=true        

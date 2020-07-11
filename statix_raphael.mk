@@ -10,6 +10,9 @@ $(call inherit-product, device/xiaomi/raphael/device.mk)
 $(call inherit-product, vendor/statix/config/common.mk)
 $(call inherit-product, vendor/statix/config/gsm.mk)
 
+# Enable updating of APEXes
+$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := raphael
