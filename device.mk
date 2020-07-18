@@ -158,3 +158,8 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
+
+# Extra AOSP Apps
+PRODUCT_PACKAGES += \
+    DeskClock \
+    Messaging
